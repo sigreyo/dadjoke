@@ -53,7 +53,7 @@ func getJokeData(baseAPI string) []byte {
 		nil,
 	)
 	if err != nil {
-		log.Println("Could not request a joke - %v", err)
+		log.Println("Could not request a joke from API - %v", err)
 	}
 	request.Header.Add("Accept", "application/json")
 	request.Header.Add("User-Agent", "Dadjoke CLI (github.com/sigreyo/dadjoke)")
